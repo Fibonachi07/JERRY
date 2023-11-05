@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Rye&display=swap');
+
+:root{
+    --font-primary: 'Rye', 'serif';
+}
+body{
+    background-color: black;
+}
+
+/****************RESET****************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/****************HEADER START****************/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.bg__color{
+    background-color: black;
+}
+
+.nav__title{
+    color: #fff;
+    margin: 0;
+    font-family: var(--font-primary), 'serif';
+    text-align: center;
+}
+
+.nav__title span{
+    margin-right: 0.5em;
+}
+
+.img__container{
+    width: 100px;
+    height: 100px;
+    background-image: url(../assets/jerry-logo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img__container img{
+    width: 100%;
+}
+
+.nav__list{
+    font-size: 1em;
+}
+
+.nav__text{
+    color: #fff;
+}
+
+.nav__text:hover,
+.nav__text:focus{
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+/****************HEADER END****************/
+
+/****************MAIN START****************/
+/*¿Quienes somos?*/
+.intro__bg__image{
+    background-color: black;
+}
+
+.intro__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro__container h2{
+    font-family: var(--font-primary), 'serif';
+    border-bottom: 2px solid white;
+    color: #fff;
+    margin-top: 1em;
+    font-size: 2.5rem;
+}
+
+.intro__container p{
+    color: #fff;
+    text-align: justify;
+    margin-inline: 3em;
+    margin-block: 2em;
+}
+
+/*Section 1 -> Servicios*/
+.servicios__acordion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3em;
+}
+
+.servicios__container{
+    margin-block: 2rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-family: var(--font-primary), 'serif';
+    padding-block: 1rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 2px solid white;
+
+}
+
+.btn__color{
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.btn__color__secondary{
+    background-color: black;
+    color: #fff;
+    border-radius: none;
+}
+
+.servicios__img{
+    width: 450px;
+
+}
+
+.servicios__img img{
+    width: 100%;
+}
+
+/*Section 2 -> Productos*/
+
+.cards__container{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.card{
+    width: 18rem;
+    margin-bottom: 2em;
+    border: 4px outset wheat;
+    box-shadow: 0px 0px 30px wheat;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.card-body p{
+    margin-bottom: 0;
+}
+
+.card-text{
+    font-size: 1.25rem;
+}
+
+/*Section 3 -> Sucursales*/
+.grid__container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 100px 50px 1fr auto;
+    grid-template-areas: 
+    'sucursal sucursal'
+    'cerreti segui'
+    'iframe1 iframe2'
+    'text1 text2';
+    gap: 20px;
+}
+
+.grid__title{
+    grid-area: sucursal;
+}
+
+.grid__subtitle_1{
+    color: #fff;
+    text-align: center;
+    font-family: var(--font-primary), 'serif';
+    grid-area: cerreti;
+    border: 5px double white;
+}
+
+.grid__subtitle_1:hover,
+.grid__subtitle_1:focus{
+    background-color: white;
+    transition: 1s;
+    border: 5px double black;
+}
+
+.grid__subtitle_1:hover a{
+    color: black;
+    text-decoration: none;
+}
+
+.grid__subtitle_2{
+    color: #fff;
+    text-align: center;
+    font-family: var(--font-primary), 'serif';
+    grid-area: segui;
+    border: 5px double white;
+}
+
+.grid__subtitle_2:hover,
+.grid__subtitle_2:focus{
+    background-color: white;
+    transition: 1s;
+    border: 5px double black;
+}
+
+.grid__subtitle_2:hover a{
+    color: black;
+    text-decoration: none;
+}
+
+.grid__subtitle_1 h3, .grid__subtitle_2 h3{
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.grid__iframe_1{
+    grid-area: iframe1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px double white;
+}
+
+iframe{
+    width: 100%;
+}
+
+.grid__iframe_2{
+    grid-area: iframe2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px double white;
+}
+
+.grid__text_1{
+    grid-area: text1;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1.25rem;
+}
+
+.grid__text_2{
+    grid-area: text2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1.25rem;
+}
+
+.sucursales__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text__container{
+    display: flex;
+}
+
+.text__container i{
+    margin-top: 5px;
+    margin-right: 5px;
+    align-self: flex-start;
+}
+
+.sucursal__text{
+    color: #fff;
+}
+
+/*Sección 4 -> Turnos*/
+
+.form__layout{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 100px);
+    grid-template-areas: 
+    'nombre-apellido'
+    'horario'
+    'sucursal'
+    'servicio'
+    'pedir-turno';
+    justify-content: center;
+    align-items: center;
+}
+
+.form__layout label{
+    color: #fff;
+}
+
+.form__layout input, .form__layout select{
+  border-radius: 10px; 
+  font-size: 1.5rem; 
+  width: 100%;
+  
+}
+
+.form__layout input{
+    padding-left: 7px;
+}
+
+.nombre-apellido{
+    grid-area: nombre-apellido;
+    font-size: 1.75rem;
+}
+
+.horario{
+    grid-area: horario;
+    font-size: 1.75rem;
+}
+
+.sucursal{
+    grid-area: sucursal;
+    font-size: 1.75rem;
+}
+
+.servicio{
+    grid-area: servicio;
+    font-size: 1.75rem;
+}
+
+.btn{
+    grid-area: pedir-turno;
+    color: #fff;
+    border: 1px solid white;
+    font-size: 2rem;
+}
+
+.form__button:hover{
+    background-color: white;
+}
+/****************MAIN END****************/
+
+/****************FOOTER START****************/
+
+footer{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    border-top: 1px solid white;
+}
+
+footer div{
+    display: flex;
+}
+
+.icon__container p{
+    font-size: 1.5rem;
+    margin: 0;
+    align-self: center;
+}
+
+.icon__container i{
+    padding: 20px;
+}
+
+.index__button{
+    background-color: black;
+    color: #fff;
+    padding: 0.25rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-inline: 20px;
+}
+
+.index__button:hover{
+    background-color: #fff;
+    color: #000000;
+}
+
+.index__link{
+    color: #fff;
+    font-size: 1.5rem;
+    
+}
+
+.index__link:hover{
+    color: black;
+    background-color: white;
+}
+
+.footer__copyright{
+    font-size: 1.2rem;
+    margin: 0;
+}
+/****************FOOTER END****************/
+
+/****************MEDIA QUERIES****************/
+
+@media screen and (max-width:991px){
+    .nav__title{
+    display: none;
+    }
+
+    .servicios__img{
+        display: none;
+    }
+
+    .grid__container{
+        display: grid;
+        grid-template-columns: auto; 
+        grid-template-areas: 
+        'sucursal'
+        'cerreti'
+        'iframe1'
+        'text1'
+        'segui'
+        'iframe2'
+        'text2';
+        gap: 20px;
+    }
+
+    .cards__container{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .form__layout{
+        margin: 20px;
+    }
+
+    .form__layout label{
+        font-size: 1.5rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
