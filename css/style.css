@@ -290,6 +290,7 @@ iframe{
     margin-top: 5px;
     margin-right: 5px;
     align-self: flex-start;
+    color: #ee1721;
 }
 
 .sucursal__text{
@@ -427,7 +428,6 @@ footer div{
     }
 
     .grid__container{
-        display: grid;
         grid-template-columns: auto; 
         grid-template-areas: 
         'sucursal'
@@ -437,7 +437,6 @@ footer div{
         'segui'
         'iframe2'
         'text2';
-        gap: 20px;
     }
 
     .cards__container{
