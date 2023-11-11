@@ -1,0 +1,12 @@
+body{
+    background-color: $bg-primary;
+}
+
+*{
+    @include reset (0, 0, border-box, none, none)
+}
+
+a{
+    text-decoration: none;
+    color: $color-primary;
+}

@@ -1,0 +1,125 @@
+/*Section 3 -> Sucursales*/
+.grid{
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 100px 50px 1fr auto;
+        grid-template-areas: 
+        'sucursal sucursal'
+        'cerreti segui'
+        'iframe1 iframe2'
+        'text1 text2';
+        gap: 20px;
+    }
+
+    &__title{
+        grid-area: sucursal;
+    }
+
+    &__subtitle_1{
+        color: $color-primary;
+        text-align: center;
+        font-family: $font-primary;
+        grid-area: cerreti;
+        border: 5px solid $color-primary;
+
+        &:hover, &:focus{
+            background-color: $bg-secondary;
+            transition: 1s;
+            border: 5px double $color-secondary;
+
+            & a{
+                color: $color-secondary;
+                text-decoration: none;
+            }
+        }   
+    
+        & h3{
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+    }
+
+
+    &__subtitle_2{
+        color: $color-primary;
+        text-align: center;
+        font-family: $font-primary;
+        grid-area: segui;
+        border: 5px double $color-primary;
+
+        &:hover, &:focus{
+            background-color: $bg-secondary;
+            transition: 1s;
+            border: 5px double $color-secondary;
+
+            & a{
+                color: $color-secondary;
+                text-decoration: none;
+            }
+        }
+    
+        & h3{
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+    }
+
+    &__iframe_1{
+        grid-area: iframe1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px double $color-primary;
+    }
+
+    &__iframe_2{
+        grid-area: iframe2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px double $color-primary;
+    }
+
+    &__text_1{
+        grid-area: text1;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        font-size: 1.25rem;
+    }
+
+    &__text_2{
+        grid-area: text2;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        font-size: 1.25rem;
+    }
+}
+
+iframe{
+    width: 100%;
+}
+
+.sucursales__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text__container{
+    display: flex;
+
+    & i{
+        margin-top: 5px;
+        margin-right: 5px;
+        align-self: flex-start;
+        color:#ee1721;
+    }
+}
+
+.sucursal__text{
+    color: $color-primary;
+}

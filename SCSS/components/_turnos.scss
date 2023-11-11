@@ -1,0 +1,62 @@
+/*Sección 4 -> Turnos*/
+
+.form{
+    &__layout{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, 100px);
+        grid-template-areas: 
+        'nombre-apellido'
+        'horario'
+        'sucursal'
+        'servicio'
+        'pedir-turno';
+        justify-content: center;
+        align-items: center;
+
+        & label{
+            color: $color-primary;
+        }
+
+        & input, & select{
+            border-radius: 10px; 
+            font-size: 1.5rem; 
+            width: 100%;  
+        }
+
+        & input{
+            padding-left: 7px;
+        }
+    }
+
+    &__button:hover{
+        background-color: $bg-secondary;
+    }
+}
+
+.nombre-apellido{
+    grid-area: nombre-apellido;
+    font-size: 1.75rem;
+}
+
+.horario{
+    grid-area: horario;
+    font-size: 1.75rem;
+}
+
+.sucursal{
+    grid-area: sucursal;
+    font-size: 1.75rem;
+}
+
+.servicio{
+    grid-area: servicio;
+    font-size: 1.75rem;
+}
+
+.btn{
+    grid-area: pedir-turno;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    font-size: 2rem;
+} 

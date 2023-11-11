@@ -1,0 +1,42 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.bg__color{
+    background-color: $bg-primary;
+}
+
+.nav__title{
+    color: $color-primary;
+    margin: 0;
+    font-family: $font-primary;
+    text-align: center;
+
+    & span{
+        margin-right: 0.5em;
+    }
+}
+
+.img__container{
+    @include w-h(100px, 100px);
+    background-image: url(../assets/jerry-logo.png);
+    background-size: cover;
+    background-position: center;
+
+    & img{
+        width: 100%;
+    }
+}
+
+.nav__text{
+    color: $color-primary;
+
+    &:hover, &:focus{
+        color: $color-secondary;
+        background-color: $bg-secondary;
+        border-radius: 1rem;
+        transition: 0.5s;
+    }
+}

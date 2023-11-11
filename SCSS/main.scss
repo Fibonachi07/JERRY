@@ -1,0 +1,19 @@
+//RESET
+@import './components/vars';
+@import './components/mixins';
+@import './reset/reset';
+
+
+
+//LAYOUT
+ @import './components/header';
+ @import './components/intro';
+ @import './components/servicios';
+ @import './components/productos';
+ @import './components/sucursales';
+ @import './components/turnos';
+ @import './components/footer';
+
+
+//MQ
+@import './components/mq'

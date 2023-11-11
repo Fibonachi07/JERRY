@@ -1,0 +1,47 @@
+/****************MEDIA QUERIES****************/
+@media screen and (max-width:991px){
+    .nav__title{
+        display: none;
+    }
+
+    .servicios__img{
+        display: none;
+    }
+
+    .grid__container{
+        grid-template-columns: auto; 
+        grid-template-areas: 
+        'sucursal'
+        'cerreti'
+        'iframe1'
+        'text1'
+        'segui'
+        'iframe2'
+        'text2';
+    }
+
+    .cards__container{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+
+    .form{
+        &__layout{
+            margin: 20px;
+        
+            & label{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}

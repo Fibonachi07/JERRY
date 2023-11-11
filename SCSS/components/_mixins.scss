@@ -1,0 +1,20 @@
+//MIXINS
+
+@mixin w-h ($w, $h){
+    width: $w;
+    height: $h;
+}
+
+@mixin reset ($m, $p, $b-sizing, $text-deco, $list-style){
+    margin: $m;
+    padding: $p;
+    box-sizing: $b-sizing;
+    text-decoration: $text-deco;
+    list-style-type: $list-style;
+}
+
+@mixin d-flex ($d-f, $f-d, $j-c){
+    display: $d-f;
+    flex-direction: $f-d;
+    justify-content: $j-c;
+}
