@@ -2,7 +2,7 @@
 .grid{
     &__container{
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 100px 50px 1fr auto;
         grid-template-areas: 
         'sucursal sucursal'
@@ -42,10 +42,10 @@
 
 
     &__subtitle_2{
+        grid-area: segui;
         color: $color-primary;
         text-align: center;
         font-family: $font-primary;
-        grid-area: segui;
         border: 5px double $color-primary;
 
         &:hover, &:focus{
@@ -67,6 +67,7 @@
 
     &__iframe_1{
         grid-area: iframe1;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -75,6 +76,7 @@
 
     &__iframe_2{
         grid-area: iframe2;
+        width: 100%;    
         display: flex;
         align-items: center;
         justify-content: center;
@@ -99,7 +101,7 @@
     }
 }
 
-iframe{
+img{
     width: 100%;
 }
 

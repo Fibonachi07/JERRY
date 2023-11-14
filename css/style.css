@@ -28,6 +28,19 @@ header{
     z-index: 1;
 }
 
+
+.nav__list{
+    align-items: center;
+    font-size: 1em;
+}
+
+.nav__list a:hover, .nav__list a:focus{
+    background-color: #fff;
+    color: black;
+    transition: 0.5s;
+    padding: 10px;
+}
+
 .bg__color{
     background-color: black;
 }
@@ -55,21 +68,10 @@ header{
     width: 100%;
 }
 
-.nav__list{
-    font-size: 1em;
-}
-
 .nav__text{
     color: #fff;
 }
-
-.nav__text:hover,
-.nav__text:focus{
-    color: black;
-    background-color: white;
-    border-radius: 1rem;
-    transition: 0.5s;
-}
+    
 /****************HEADER END****************/
 
 /****************MAIN START****************/

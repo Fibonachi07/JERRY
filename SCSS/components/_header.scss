@@ -30,13 +30,22 @@ header{
     }
 }
 
-.nav__text{
-    color: $color-primary;
+.nav{
 
-    &:hover, &:focus{
+    &__list{
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        color: $color-primary;
+        display: inline-block;
+        padding: 5px;
+        
+        &:hover, & a:focus{
         color: $color-secondary;
         background-color: $bg-secondary;
-        border-radius: 1rem;
         transition: 0.5s;
+        }
     }
 }
