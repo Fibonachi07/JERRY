@@ -19,7 +19,6 @@
         }
 
         & input, & select{
-            border-radius: 10px; 
             font-size: 1.5rem; 
             width: 100%;  
         }
@@ -27,6 +26,10 @@
         & input{
             padding-left: 7px;
         }
+    }
+
+    &__button{
+        border-radius: 0%;
     }
 
     &__button:hover{

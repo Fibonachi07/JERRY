@@ -31,12 +31,10 @@ footer{
         color: $color-primary;
         padding: 0.25rem;
         border: 1px solid $color-primary;
-        border-radius: 10px;
         padding-inline: 20px;
 
         &:hover{
             background-color: $bg-secondary;
-            color: $color-secondary;
         }
     }
 

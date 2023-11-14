@@ -16,11 +16,14 @@
     box-shadow: 0px 0px 30px wheat;
     
     &-text{
-        font-size: 1.25rem
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        align-self: center;
     }
 
     &-body{
-        @include d-flex (flex, column, space-between);
+        @include d-flex (flex, column, center);
         align-items: flex-start;
 
         & p{
