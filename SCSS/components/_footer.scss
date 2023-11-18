@@ -28,7 +28,7 @@ footer{
 .index{
     &__button{
         background-color: $bg-primary;
-        color: $color-primary;
+        color: map-get($colors , Primary);
         padding: 0.25rem;
         border: 1px solid $color-primary;
         padding-inline: 20px;
@@ -41,7 +41,7 @@ footer{
     }
 
     &__link{
-        color: $color-primary;
+        color: map-get($colors , Primary);
         font-size: 1.5rem;
 
         &:hover{
