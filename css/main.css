@@ -97,6 +97,7 @@ header {
 }
 .servicios__container {
   margin-block: 2rem;
+  overflow: hidden;
 }
 .servicios__img {
   width: 450px;
@@ -325,11 +326,13 @@ img {
   font-size: 1.75rem;
 }
 
-.btn {
+input.btn {
   grid-area: pedir-turno;
   color: #fff;
   border: 1px solid #fff;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  width: fit-content;
+  justify-self: center;
 }
 
 /****************FOOTER START****************/
@@ -393,8 +396,6 @@ footer div {
     grid-template-areas: "sucursal" "cerreti" "iframe1" "text1" "segui" "iframe2" "text2";
   }
   .cards__container {
-    display: flex;
-    flex-grow: 1;
     justify-content: space-evenly;
     gap: 20px;
   }
@@ -405,7 +406,6 @@ footer div {
     font-size: 1.5rem;
   }
   footer {
-    display: flex;
     flex-direction: column-reverse;
     text-align: center;
   }
