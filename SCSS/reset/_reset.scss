@@ -1,5 +1,10 @@
+html{
+    min-width: 320px;
+}
+
 body{
     background-color: $bg-primary;
+    font-family: sans-serif;
 }
 
 *{

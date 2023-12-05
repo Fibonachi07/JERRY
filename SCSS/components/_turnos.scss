@@ -1,5 +1,9 @@
 /*Sección 4 -> Turnos*/
 
+.turnos__title{
+    margin-top: 2rem;
+}
+
 .form{
     &__layout{
         display: grid;
@@ -13,6 +17,7 @@
         'pedir-turno';
         justify-content: center;
         align-items: center;
+        margin-top: 3rem;
 
         & label{
             color: $color-primary;

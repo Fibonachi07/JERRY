@@ -1,8 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+html {
+  min-width: 320px;
+}
+
 body {
   background-color: #000;
+  font-family: sans-serif;
 }
 
 * {
@@ -55,6 +60,7 @@ header {
 }
 .nav__text {
   color: #fff;
+  font-family: sans-serif;
   display: inline-block;
   padding: 5px;
 }
@@ -82,9 +88,11 @@ header {
 }
 .intro__container p {
   color: #fff;
+  font-size: 1.5rem;
+  font-family: sans-serif;
   text-align: justify;
-  margin-inline: 3em;
-  margin-block: 2em;
+  margin-inline: 7em;
+  margin-block: 3em;
 }
 
 /*INTRO END*/
@@ -94,6 +102,7 @@ header {
   flex-direction: column;
   justify-content: center;
   row-gap: 3em;
+  font-family: sans-serif;
 }
 .servicios__container {
   margin-block: 2rem;
@@ -104,6 +113,13 @@ header {
 }
 .servicios__img img {
   width: 100%;
+  border: 5px solid rgba(82, 82, 82, 0.8);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: wheat;
+  color: black;
+  box-shadow: 0px 0px 10px wheat;
 }
 
 .title {
@@ -143,8 +159,8 @@ header {
   border: 4px solid wheat;
   box-shadow: 0px 0px 30px wheat;
   opacity: 0;
-  animation: appears 3s ease-in forwards;
-  animation-delay: 3s;
+  animation: appears 1s ease-in forwards;
+  animation-delay: 1s;
   animation-iteration-count: 1;
 }
 .card-text {
@@ -240,7 +256,6 @@ header {
 }
 .grid__text_1 {
   grid-area: text1;
-  align-items: center;
   justify-content: center;
   text-align: justify;
   font-size: 1.25rem;
@@ -248,7 +263,6 @@ header {
 .grid__text_2 {
   grid-area: text2;
   text-align: center;
-  align-items: center;
   justify-content: center;
   text-align: justify;
   font-size: 1.25rem;
@@ -279,6 +293,10 @@ img {
 }
 
 /*Sección 4 -> Turnos*/
+.turnos__title {
+  margin-top: 2rem;
+}
+
 .form__layout {
   display: grid;
   grid-template-columns: auto;
@@ -286,6 +304,7 @@ img {
   grid-template-areas: "nombre-apellido" "horario" "sucursal" "servicio" "pedir-turno";
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 }
 .form__layout label {
   color: #fff;
@@ -382,11 +401,44 @@ footer div {
   margin: 0;
 }
 
+.rotate-vert-center {
+  -webkit-animation: rotate-vert-center 1000ms 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: rotate-vert-center 1000ms 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
 /****************FOOTER END****************/
 /****************MEDIA QUERIES****************/
+@media screen and (max-width: 1343px) {
+  .intro__container p {
+    margin-inline: 5em;
+  }
+}
 @media screen and (max-width: 991px) {
   .nav__title {
     display: none;
+  }
+  .intro__container p {
+    margin-inline: 3em;
   }
   .servicios__img {
     display: none;

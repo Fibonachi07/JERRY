@@ -1,7 +1,17 @@
 /****************MEDIA QUERIES****************/
+@media screen and (max-width: 1343px) {
+    .intro__container p{
+        margin-inline: 5em;
+    }
+}
+
 @media screen and (max-width:991px){
     .nav__title{
         display: none;
+    }
+
+    .intro__container p{
+        margin-inline: 3em;
     }
 
     .servicios__img{
@@ -42,3 +52,5 @@
         text-align: center;
     }
 }
+
+

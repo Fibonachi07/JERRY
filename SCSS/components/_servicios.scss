@@ -4,6 +4,7 @@
     &__acordion{
         @include d-flex (flex, column, center);
         row-gap: 3em;
+        font-family: sans-serif;
         }
 
     &__container{
@@ -16,8 +17,15 @@
 
         & img{
             width: 100%;
+            border: 5px solid rgba(82, 82, 82, 0.8);
         }
     }
+}
+
+.accordion-button:not(.collapsed){
+    background-color: wheat;
+    color: black;
+    box-shadow: 0px 0px 10px wheat;
 }
 
 .title{

@@ -17,9 +17,11 @@
 
         & p{
             color: $color-primary;
+            font-size: 1.5rem;
+            font-family: sans-serif;
             text-align: justify;
-            margin-inline: 3em;
-            margin-block: 2em;
+            margin-inline: 7em;
+            margin-block: 3em;
         }
     }
 }
