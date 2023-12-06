@@ -352,6 +352,7 @@ input.btn {
   font-size: 1.6rem;
   width: fit-content;
   justify-self: center;
+  padding-inline-start: 13px;
 }
 
 /****************FOOTER START****************/
