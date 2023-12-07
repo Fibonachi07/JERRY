@@ -36,12 +36,17 @@
     &__button{
         border-radius: 0%;
         padding-left: 12px;
+        height: auto;
     }
 
     &__button:hover{
         background-color: $bg-secondary;
         transform: scale(0.98, 0.98);
     }
+}
+
+#nombre-apellido{
+    height: 2rem;
 }
 
 .nombre-apellido{
