@@ -326,7 +326,7 @@ img {
   transform: scale(0.98, 0.98);
 }
 
-#nombre-apellido {
+#nombre-apellido, #horario {
   height: 2rem;
 }
 
@@ -403,6 +403,8 @@ footer div {
 }
 
 .footer__copyright {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   font-size: 1.2rem;
   margin: 0;
 }
