@@ -410,8 +410,8 @@ footer div {
 }
 
 .rotate-vert-center {
-  -webkit-animation: rotate-vert-center 1000ms 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-  animation: rotate-vert-center 1000ms 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: rotate-vert-center 4000ms 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both infinite;
+  animation: rotate-vert-center 4000ms 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both infinite;
 }
 
 @-webkit-keyframes rotate-vert-center {
